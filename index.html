@@ -462,7 +462,7 @@ catch(e){}
 return DEFAULT; 
 }
 let D=getData();
-let currentMW=3; // display which round to start from
+let currentMW=4; // display which round to start from
 
 function getTeam(id){ 
   return D.teams.find(t=>t.id===id)||{name:"Unknown",short:"?",color:"#666",bg:"rgba(100,100,100,0.1)"}; 
@@ -584,7 +584,9 @@ function renderStandings(){
     const pos=i+1;
     const barColor=pos===1?"var(--gold)":pos<=4?"#38bdf8":pos>=7?"var(--loss)":"transparent";
     const posClass=pos===1?"gold":pos>=7?"rel":"";
-    const formHtml=t.form.slice(-5).map(f=>{const cls=f==="W"?"fw":f==="D"?"fdraw":"fl";return `<div class="fd ${cls}">${f}</div>`;}).join("");
+    const formHtml=t.form.slice(-5).map(f=>{ 
+    const cls=f==="W"?"fw":f==="D"?"fdraw":"fl"; 
+      return `<div class="fd ${cls}">${f}</div>`;}).join("");
     const gdClass=t.GD>0?"pos":t.GD<0?"neg":"";
     return `<tr>
       <td><div class="pos-n ${posClass}">${pos}</div></td>
