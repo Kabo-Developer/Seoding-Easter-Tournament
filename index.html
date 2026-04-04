@@ -392,10 +392,16 @@ const DEFAULT = {
     {id:102,teamId:3, name:"Shumba"},
     {id:103,teamId:3,name:"Phemelo Kelehe"},
     {id:104,teamId:3,name:"Lopang Diraditsile"},
-    // {id:104,teamId:1,name:"Bongani Zulu"},
-    // {id:104,teamId:1,name:"Bongani Zulu"},
-    // {id:104,teamId:1,name:"Bongani Zulu"},
-  //   
+    {id:105,teamId:3,name:"Chesa"}, // Power FC
+    //{id:106,teamId:3,name:"Lopang Diraditsile"}, // Power FC
+  //  ROUND 2 
+    {id:201,teamId:7,name:"Lorch"}, // Seoding Real Madrid 
+    {id:201,teamId:7,name:"Lorch"}, // Seoding Real Madrid 
+    
+    //   ROUND 3
+    {id:204,teamId:3,name:"Neo Mpheng"},
+    {id:203,teamId:3,name:"Kopano Sesing"},
+ 
   //display players that obtained cards 
   // {id:201,teamId:2,name:"Kagiso Sithole"}, 
   // {id:202,teamId:2,name:"Thabo Dlamini"},
@@ -414,7 +420,7 @@ const DEFAULT = {
   //   {id:803,teamId:8,name:"Thato Seolwane"},{id:804,teamId:8,name:"Puleng Mathe"},
    ],
   
-   matches:[
+  matches:[
     {id:1,mw:1, homeTeamId:6, awayTeamId:2, date:"2026-04-03", startTime:"09:30", endTime:"11:45",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:0, awayScore:1,
      goals:[ 
      {playerId:101,teamId:2,minute:28}, 
@@ -428,7 +434,7 @@ const DEFAULT = {
     },
     
     //winning team so far "Shaleng"
-    {id:2,mw:2, homeTeamId:8, awayTeamId:3, date:"2025-04-04",startTime:"11:30",endTime:"13:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:0, awayScore:3,
+    {id:2,mw:1, homeTeamId:8, awayTeamId:3, date:"2025-04-04",startTime:"11:30",endTime:"13:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:0, awayScore:3,
      goals:[ 
       {playerId:102,teamId:3,minute:19}, 
       {playerId:103,teamId:3,minute:55}, 
@@ -441,14 +447,66 @@ const DEFAULT = {
      ]
     },
     
-    {id:3,mw:3, homeTeamId:7, awayTeamId:5, date:"2025-04-03",startTime:"13:00",endTime:"15:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:3, awayScore:2,
+    {id:3,mw:1, homeTeamId:7, awayTeamId:5, date:"2025-04-03",startTime:"13:00",endTime:"15:30",commentator:"Spagetty and Zidane",venue:"Seoding Sports Ground",status:"completed",homeScore:3, awayScore:2,
      //goals:[{playerId:401,teamId:4,minute:29},{playerId:801,teamId:8,minute:55},{playerId:802,teamId:8,minute:87}],
      //cards:[{playerId:404,playerName:"Lesego Phiri",teamId:4,minute:42,type:"yellow"},{playerId:803,playerName:"Thato Seolwane",teamId:8,minute:66,type:"red"}]
     },
-    {id:4,mw:4, homeTeamId:1, awayTeamId:4, date:"2025-04-03",startTime:"15:30",endTime:"17:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"live",homeScore:0, awayScore:0,
-     //goals:[{playerId:501,teamId:5,minute:33},{playerId:601,teamId:6,minute:71}],
-     cards:[{playerId:404,playerName:"Jersey 10",teamId:4,minute:58,type:"yellow"}, 
-     //{playerId:603,playerName:"Katlego Mosala",teamId:6,minute:84,type:"yellow"}]
+
+    {id:4,mw:1, homeTeamId:1, awayTeamId:4, date:"2025-04-03",startTime:"15:30",endTime:"17:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:1, awayScore:0,
+     goals:[ 
+     {playerId:105,teamId:1,minute:33}, 
+     // {playerId:601,teamId:6,minute:71} 
+     ],
+     cards:[ 
+     {playerId:502,playerName:"Thabo Mongale",teamId:1,minute:68,type:"yellow"}, 
+     {playerId:503,playerName:"Scara ",teamId:1,minute:35,type:"yellow"}]
+    },
+
+    // ROUND 2 
+    {id:5,mw:2, homeTeamId:1, awayTeamId:3, date:"2025-04-04",startTime:"11:30",endTime:"12:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:0, awayScore:2,
+     goals:[ 
+     //{playerId:201,teamId:5,minute:49}, 
+    //  {playerId:601,teamId:6,minute:71}
+     ],
+     //cards:[ 
+     // {playerId:502,playerName:"Nhlanhla Dube",teamId:5,minute:58,type:"yellow"}, 
+     // {playerId:603,playerName:"Katlego Mosala",teamId:6,minute:84,type:"yellow"}
+     //]
+    },
+
+    {id:5,mw:2, homeTeamId:7, awayTeamId:2, date:"2025-04-04",startTime:"12:30",endTime:"13:30",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:2, awayScore:4,
+     //goals:[ 
+     // {playerId:501,teamId:5,minute:33}, 
+     // {playerId:601,teamId:6,minute:71}
+     // ],
+     //cards:[ 
+     // {playerId:502,playerName:"Nhlanhla Dube",teamId:5,minute:58,type:"yellow"}, 
+     // {playerId:603,playerName:"Katlego Mosala",teamId:6,minute:84,type:"yellow"}
+     //]
+    },
+
+    {id:5,mw:2, homeTeamId:7, awayTeamId:1, date:"2025-04-04",startTime:"12:30",endTime:"13:30",commentator:"Spagetty & Zidane",venue:"Seoding Sports Ground",status:"completed",homeScore:2, awayScore:0,
+     goals:[ 
+    //  {playerId:501,teamId:5,minute:33}, 
+     {playerId:201,teamId:7,minute:49},
+     {playerId:201,teamId:7,minute:68}
+     ],
+     //cards:[ 
+     // {playerId:502,playerName:"Nhlanhla Dube",teamId:5,minute:58,type:"yellow"}, 
+     // {playerId:603,playerName:"Katlego Mosala",teamId:6,minute:84,type:"yellow"}
+     //]
+    },
+
+    // Final match
+    {id:7,mw:3, homeTeamId:2, awayTeamId:3, date:"2025-04-04",startTime:"16:00",endTime:"17:00",commentator:"Spagetty",venue:"Seoding Sports Ground",status:"completed",homeScore:0, awayScore:2,
+     goals:[ 
+     {playerId:203,teamId:2,minute:33}, 
+     {playerId:204,teamId:2,minute:71}
+     ],
+     cards:[
+     // {playerId:502,playerName:"Nhlanhla Dube",teamId:5,minute:58,type:"yellow"}, 
+     // {playerId:603,playerName:"Katlego Mosala",teamId:6,minute:84,type:"yellow"}
+     ]
     },
     
   ]
